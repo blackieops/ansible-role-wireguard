@@ -1,0 +1,11 @@
+---
+# Copyright (C) 2021-2022 Robert Wimmer
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+- name: (RHEL) Tasks for RedHat Enterprise Linux
+  block:
+    - name: (RHEL) Install WireGuard packages
+      ansible.builtin.yum:
+        name:
+          - "wireguard-tools"
+        state: present
